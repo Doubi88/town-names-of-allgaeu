@@ -1,0 +1,178 @@
+grf {
+  grfid: "DBI\01";
+  name: string(STR_GRF_NAME);
+  desc: string(STR_GRF_DESCRIPTION);
+  version: 0;
+  min_compatible_version: 0;
+}
+
+town_names(prefix) {
+  {
+    text("Ober", 1),
+    text("Unter", 1),
+    text("Groß", 1),
+    text("Klein", 1),
+    text("Nieder", 1),
+    text("Böser", 1),
+    text("Alt", 1),
+    text("Nord", 1),
+    text("Ost", 1),
+    text("Süd", 1),
+    text("West", 1)
+  }
+}
+
+town_names(middle) {
+  {
+    text("weiler", 1),
+    text("linden", 1),
+    text("scheid", 1),
+    text("staufen", 1),
+    text("heimen", 1),
+    text("maier", 1),
+    text("opfen", 1),
+    text("stiefen", 1),
+    text("simmer", 1),
+    text("buchen", 1),
+    text("kin", 1),
+    text("grünen", 1),
+    text("schütten", 1),
+    text("bron", 1),
+    text("buflings", 1),
+    text("allmanns", 1),
+    text("buchen", 1),
+    text("eyen", 1),
+    text("kapf", 1),
+    text("hammer", 1),
+    text("hasen", 1),
+    text("hindel", 1),
+    text("bolster", 1),
+    text("buchen", 1),
+    text("dietmanns", 1)
+  }
+}
+
+town_names(noPrefix) {
+  {
+    text("Weiler", 1),
+    text("Linden", 1),
+    text("Scheid", 1),
+    text("Staufen", 1),
+    text("Heimen", 1),
+    text("Maier", 1),
+    text("Opfen", 1),
+    text("Stiefen", 1),
+    text("Simmer", 1),
+    text("Buchen", 1),
+    text("Kin", 1),
+    text("Grünen", 1),
+    text("Schütten", 1),
+    text("Bron", 1),
+    text("Buflings", 1),
+    text("Allmanns", 1),
+    text("Buchen", 1),
+    text("Eyen", 1),
+    text("Kapf", 1),
+    text("Hammer", 1),
+    text("Hasen", 1),
+    text("Hindel", 1),
+    text("Bolster", 1),
+    text("Buchen", 1),
+    text("Dietmanns", 1)
+  }
+}
+
+town_names(noSuffix) {
+  {
+    text("weiler", 1),
+    text("linden", 1),
+    text("scheid", 1),
+    text("staufen", 1),
+    text("heimen", 1),
+    text("maier", 1),
+    text("buchen", 1),
+    text("schütten", 1),
+    text("bron", 1),
+    text("buflings", 1),
+    text("buchen", 1),
+    text("eyen", 1),
+    text("kapf", 1),
+    text("hammer", 1),
+    text("hindel", 1),
+    text("bolster", 1),
+    text("dietmanns", 1)
+  }
+}
+town_names(suffix) {
+  {
+    text("hofen", 1),
+    text("bach", 1),
+    text("see", 1),
+    text("berg", 1),
+    text("egg", 1),
+    text("ingen", 1),
+    text("mühle", 1),
+    text("reute", 1),
+    text("ried", 1),
+    text("kirch", 1),
+    text("holz", 1),
+    text("dorf", 1),
+    text("bühl", 1),
+    text("tobel", 1),
+    text("schwand", 1),
+    text("schwenden", 1),
+    text("ach", 1),
+    text("lang", 1),
+    text("steig", 1),
+    text("brücke", 1)
+  }
+}
+
+town_names(prefixMiddleSuffix) {
+  {
+    town_names(prefix, 1)
+  }
+  {
+    town_names(middle, 1)
+  }
+  {
+    town_names(suffix, 1)
+  }
+}
+
+town_names(noPrefixSuffix) {
+  {
+    town_names(noPrefix, 1)
+  }
+  {
+    town_names(suffix, 1)
+  }
+}
+
+town_names(prefixSuffix) {
+  {
+    town_names(prefix, 1)
+  }
+  {
+    town_names(suffix, 1)
+  }
+}
+
+town_names(prefixNoSuffix) {
+  {
+    town_names(prefix, 1)
+  }
+  {
+    town_names(noSuffix, 1)
+  }
+}
+
+town_names {
+  styles : string(STR_GRF_NAME);
+  {
+    town_names(prefixMiddleSuffix, 3),
+    town_names(noPrefixSuffix, 2),
+    town_names(prefixNoSuffix, 2),
+    town_names(prefixSuffix, 1)
+  }
+}

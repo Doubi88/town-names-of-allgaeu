@@ -1,0 +1,7 @@
+##grflangid 0x01
+
+# GRF name and description definitions
+STR_GRF_NAME        :Town Names of Allgäu 
+STR_GRF_DESCRIPTION :Creates random town names based on locations in the german region "Allgäu".{}Examples: {}{COPYRIGHT}2021 Doubi
+
+
