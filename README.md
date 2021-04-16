@@ -8,7 +8,7 @@ Unterschwand
 Kapfingen
 Hasenhofen
 
-## Licence
+## License
 MIT License
 
 Copyright (c) 2021 Doubi88 <tobis_mail@yahoo.de>
